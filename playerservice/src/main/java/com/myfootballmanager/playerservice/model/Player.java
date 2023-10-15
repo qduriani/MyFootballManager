@@ -1,8 +1,15 @@
 package com.myfootballmanager.playerservice.model;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class Player {
+  @ApiModelProperty(notes = "Id of the Player", name="id", required=true, value="id")
   public Integer id;
+
+  @ApiModelProperty(notes = "Name of the Player", name="name", required=true, value="name")
   public String name;
+
+  @ApiModelProperty(notes = "Team name of the Player", name="team_name", required=true, value="team_name")
   public String team_name;
 
   public Player(Integer id, String name, String team_name) {
